@@ -1,0 +1,409 @@
+/* RESET  */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  body {
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  color: white;
+
+}
+
+/* HEADER */
+header {
+  background-color: #333;
+  color: white;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+
+.logo a {
+  font-size: 1.8rem;
+  margin-bottom: 0;
+  font-family: "Long Cang", cursive;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  color: #ccc;
+  text-decoration: none;
+  display: inline;
+}
+
+.logo a:hover {
+  color: rgb(130, 118, 118)
+}
+
+
+.logo i {
+  color: #ccc;
+  font-size: 1.5rem;
+  margin-right: 0.5rem;
+
+}
+
+nav ul {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+}
+
+nav ul li a {
+  color: #ccc;
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-family: 'Times New Roman', Times, serif;
+
+}
+
+nav ul li a:hover {
+  color: white;
+}
+
+/* HERO SECTION */
+#hero {
+  background-image: url("frame.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  position: relative;
+  background-repeat: no-repeat;
+}
+
+.overlay {
+  background: rgba(0, 0, 0, 0.6);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 2rem;
+}
+
+#hero h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  font-size: xx-large;
+}
+
+.highlight {
+  color: #f1c40f;
+}
+
+#hero p {
+  max-width: 600px;
+  color: #ccc;
+  font-size: 1.5rem;
+  line-height: 1.6;
+
+
+}
+
+/* TESTIMONIALS */
+.testimonials {
+  background-color: #f5f5f5;
+  padding: 40px 20px;
+  color: #000;
+}
+
+.testimonials h2 {
+  font-size: 28px;
+  color: #333;
+  text-align: left;
+  margin-left: 20px;
+  margin-bottom: 30px;
+}
+
+.testimonial {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px 25px;
+  margin: 20px auto;
+  max-width: 800px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.05);
+}
+
+.testimonial .quote {
+  font-size: 16px;
+  font-style: italic;
+  color: #333;
+  margin: 15px 0;
+  line-height: 1.6;
+}
+
+.testimonial .author {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  gap: 15px;
+}
+
+.testimonial img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.testimonial .name {
+  font-weight: bold;
+  margin: 0;
+  color: #000;
+}
+
+.testimonial .role {
+  font-style: italic;
+  color: #888;
+  margin: 0;
+}
+
+
+/*nos dernier offre*/
+#notre-offre {
+  background-color: rgb(240, 231, 231);
+  color: black;
+  width: 100%;
+  display: block;
+  padding: 2rem 0;
+  overflow: hidden;
+
+
+
+
+}
+
+#titre {
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bold;
+  font-size: xx-large;
+  padding-bottom: 30px;
+  padding-top: 30px;
+  padding-left: 30px;
+}
+
+.offres {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 100%;
+  align-items: center;
+  overflow: hidden;
+  padding: 10px;
+  flex-shrink: 1;
+  gap: 1.5rem;
+  justify-content: center;
+
+}
+
+.offre {
+  background-color: #ffff;
+  padding: 20px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content:
+    space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+  flex-shrink: 1;
+  max-width: 300px;
+
+
+
+
+
+}
+
+hr {
+  height: 3px;
+  background-color: black;
+  width: 70%;
+  margin: auto;
+  text-align: center;
+
+
+}
+
+.imgs {
+
+  display: block;
+  margin: 20px;
+  max-width: 400px;
+  border-radius: 15px;
+  gap: 1rem;
+
+
+
+
+}
+
+.decription {
+  text-align: center;
+}
+
+.decription p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: italic;
+  font-size: medium;
+
+
+
+}
+
+
+/*notre équipe*/
+#vp-equipe {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 100%;
+  flex-shrink: 1;
+  background-color: #1f1f1f;
+  padding: 150px;
+
+}
+
+#team-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  padding: 0px;
+
+
+}
+
+.equipe {
+  max-width: 600px;
+  padding: 20px;
+}
+
+.equipe h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+#eq {
+  flex: 1;
+
+  color: white;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.equipe p {
+  font-size: 18px;
+  line-height: 1.8;
+
+
+
+}
+
+
+/*contacter nous*/
+#contacter {
+  background-color: #343232;
+  color: black;
+  padding: 150px;
+  flex-shrink: 1;
+}
+
+form {
+  text-align: center;
+  gap: 1rem;
+
+
+}
+
+form h2 {
+  padding-top: 20px;
+  font-size: xx-large;
+  font-weight: bold;
+
+
+}
+
+input {
+  color: #888;
+  background: #343232;
+
+  font-size: xx-large;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  text-decoration: none;
+
+}
+
+.btn {
+  text-decoration: none;
+  color: white;
+  background-color: #f1c40f;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: bold;
+
+}
+
+.btn:hover {
+  color: #ad7474;
+  background-color: #fff;
+}
+
+
+/*copy-right*/
+.copy-right {
+
+  background-color: #888;
+  text-align: center;
+  margin: auto;
+  height: 100%;
+  width: auto;
+  padding-bottom: 20px;
+}
+
+.copy-right p {
+  margin: auto;
+  font-family: 'Times New Roman', Times, serif;
+  padding-top: 10px;
+  font-size: x-large;
+}
+
+
+
+
+
+/*si tu ouvre le site sur petite ecran smart phone*/
+
+
+
+@media (max-width: 768px) {
+  #vp-equipe {
+    flex-direction: column;
+    padding: 50px 20px;
+  }
+
+  .offres {
+    flex-direction: column;
+  }
+
+  .equipe {
+    padding: 10px;
+  }
+
+  #contacter {
+    padding: 50px 20px;
+  }
+}
