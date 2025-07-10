@@ -307,21 +307,22 @@ form input {
 }
 
 /* RESPONSIVE */
+/* RESPONSIVE */
 @media (max-width: 768px) {
   header {
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     text-align: center;
   }
 
   nav ul {
-    flex-direction: column;
+    flex-direction: row;
     gap: 1rem;
     margin-top: 1rem;
   }
 
   .offres {
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
   }
 
@@ -330,32 +331,32 @@ form input {
   }
 
   .overlay h1 {
-    font-size: 1.8rem;
+    font-size: 2rem;
   }
 
   #hero p {
-    font-size: 1rem;
-  }
-
-  .equipe h2 {
     font-size: 1.5rem;
   }
 
+  .equipe h2 {
+    font-size: 2rem;
+  }
+
   .equipe p {
-    font-size: 1rem;
+    font-size: 1.5rem;
   }
 
   form input, .btn {
     width: 90%;
-    max-width: 300px;
+    max-width: 400px;
   }
 
   .btn {
-    padding: 12px;
+    padding: 30px;
   }
 
   .testimonial {
-    padding: 15px;
+    padding: 30px;
   }
 
   #team-img {
@@ -364,6 +365,6 @@ form input {
   }
 
   .copy-right p {
-    font-size: 1rem;
+    font-size: 1.5rem;
   }
 }
