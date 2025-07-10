@@ -63,20 +63,23 @@ nav ul li a:hover {
   background-image: url("frame.jpg");
   background-size: cover;
   background-position: center;
-  height: 100vh;
-  position: relative;
   background-repeat: no-repeat;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .overlay {
   background: rgba(0, 0, 0, 0.6);
+  width: 100%;
   height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding: 0 2rem;
+  padding: 20px;
 }
 
 #hero h1 {
@@ -99,8 +102,12 @@ nav ul li a:hover {
 /* TESTIMONIALS */
 .testimonials {
   background-color: #f5f5f5;
-  padding: 40px 20px;
+  padding: 60px 20px;
   color: #000;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .testimonials h2 {
@@ -158,7 +165,11 @@ nav ul li a:hover {
 #notre-offre {
   background-color: rgb(240, 231, 231);
   color: black;
-  padding: 2rem 1rem;
+  padding: 60px 20px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 #titre {
@@ -186,7 +197,6 @@ nav ul li a:hover {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
-
 .imgs img {
   width: 100%;
   border-radius: 10px;
@@ -207,21 +217,24 @@ hr {
 
 /* ÉQUIPE */
 #vp-equipe {
+  background-color: #1f1f1f;
+  color: white;
+  padding: 60px 20px;
+  min-height: 100vh;
   display: flex;
   flex-wrap: wrap;
-  background-color: #1f1f1f;
-  padding: 50px 20px;
+  align-items: center;
+  justify-content: center;
 }
 
 #team-img {
-  width: 100%;
+  max-width: 100%;
   border-radius: 10px;
 }
 
 .equipe {
   flex: 1 1 300px;
   padding: 20px;
-  color: white;
 }
 
 .equipe h2 {
@@ -238,8 +251,13 @@ hr {
 /* CONTACT */
 #contacter {
   background-color: #343232;
-  padding: 50px 20px;
+  padding: 60px 20px;
   text-align: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 #contacter h2 {
@@ -249,7 +267,7 @@ hr {
 }
 
 form input {
-  width: 80%;
+  max-width: 80%;
   padding: 10px;
   margin: 10px 0;
   font-size: 1rem;
@@ -276,13 +294,11 @@ form input {
 }
 
 /* COPYRIGHT */
-
 .copy-right {
   background-color: #888;
   text-align: center;
   padding: 20px;
 }
-
 
 .copy-right p {
   font-family: 'Times New Roman', Times, serif;
@@ -292,6 +308,18 @@ form input {
 
 /* RESPONSIVE */
 @media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+
   .offres {
     flex-direction: column;
     align-items: center;
@@ -314,6 +342,28 @@ form input {
   }
 
   .equipe p {
+    font-size: 1rem;
+  }
+
+  form input, .btn {
+    width: 90%;
+    max-width: 300px;
+  }
+
+  .btn {
+    padding: 12px;
+  }
+
+  .testimonial {
+    padding: 15px;
+  }
+
+  #team-img {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .copy-right p {
     font-size: 1rem;
   }
 }
