@@ -168,7 +168,6 @@ nav ul li a:hover {
   padding: 60px 20px;
   min-height: 100vh;
   display: flex;
-  flex-direction: column;
   justify-content: center;
 }
 
@@ -267,7 +266,7 @@ hr {
 }
 
 form input {
-  max-width: 80%;
+  max-width: 90%;
   padding: 10px;
   margin: 10px 0;
   font-size: 1rem;
@@ -369,10 +368,10 @@ form input {
     margin-bottom: 20px;
   }
    form input {
-  min-width: 80%;
+  min-width: 90%;
   padding: 20px;
   margin: 15px 0;
-  font-size: 1.5rem;
+  font-size: 2rem;
     
     
   }
