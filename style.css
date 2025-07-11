@@ -168,7 +168,9 @@ nav ul li a:hover {
   padding: 60px 20px;
   min-height: 100vh;
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
 
 #titre {
@@ -176,6 +178,7 @@ nav ul li a:hover {
   font-weight: bold;
   font-size: xx-large;
   padding: 30px 30px 10px;
+  text-align: center;
 }
 
 .offres {
@@ -306,12 +309,11 @@ form input {
 }
 
 /* RESPONSIVE */
-
 @media (max-width: 768px) {
-
-   html {
+  html {
     font-size: 18px;
   }
+
   header {
     flex-direction: column;
     align-items: center;
@@ -322,7 +324,6 @@ form input {
     flex-direction: column;
     gap: 1rem;
     margin-top: 1rem;
-  }argin-top: 1rem;
   }
 
   .offres {
@@ -353,30 +354,36 @@ form input {
   form input, .btn {
     width: 90%;
     max-width: 400px;
+    font-size: 1.2rem;
   }
 
   .btn {
-    padding: 30px;
+    padding: 20px;
+    font-size: 1.2rem;
   }
 
   .testimonial {
     padding: 30px;
+    font-size: 1.2rem;
   }
 
   #team-img {
     width: 100%;
     margin-bottom: 20px;
   }
-   form input {
-  min-width: 90%;
-  padding: 20px;
-  margin: 15px 0;
-  font-size: 2rem;
-    
-    
-  }
 
   .copy-right p {
     font-size: 1.5rem;
+  }
+
+  #titre {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .testimonial .quote,
+  .testimonial .name,
+  .testimonial .role {
+    font-size: 1.2rem;
   }
 }
