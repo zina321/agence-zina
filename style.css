@@ -170,7 +170,6 @@ nav ul li a:hover {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
 }
 
 #titre {
@@ -178,7 +177,6 @@ nav ul li a:hover {
   font-weight: bold;
   font-size: xx-large;
   padding: 30px 30px 10px;
-  text-align: center;
 }
 
 .offres {
@@ -205,6 +203,7 @@ nav ul li a:hover {
   object-fit: cover;     
   border-radius: 10px;
 }
+
 
 .decription {
   text-align: center;
@@ -271,7 +270,7 @@ hr {
 }
 
 form input {
-  max-width: 90%;
+  max-width: 80%;
   padding: 10px;
   margin: 10px 0;
   font-size: 1rem;
@@ -312,10 +311,10 @@ form input {
 
 /* RESPONSIVE */
 @media (max-width: 768px) {
-  html {
+
+    html {
     font-size: 18px;
   }
-
   header {
     flex-direction: column;
     align-items: center;
@@ -323,7 +322,7 @@ form input {
   }
 
   nav ul {
-    flex-direction: column;
+  flex-direction: column;
     gap: 1rem;
     margin-top: 1rem;
   }
@@ -334,7 +333,7 @@ form input {
   }
 
   .offre {
-    max-width: 90%;
+    max-width: 120%;
   }
 
   .overlay h1 {
@@ -353,39 +352,43 @@ form input {
     font-size: 1.5rem;
   }
 
-  form input, .btn {
-    width: 90%;
-    max-width: 400px;
-    font-size: 1.2rem;
-  }
-
+  form input,
   .btn {
-    padding: 20px;
-    font-size: 1.2rem;
+    width: 100%;
+    max-width: 400px;
   }
 
-  .testimonial {
-    padding: 30px;
-    font-size: 1.2rem;
-  }
+
+.btn {
+  padding: 14px;
+}
+
+ .testimonial {
+  padding: 20px;
+  font-size: 1.1rem;
+}
+  .testimonial .quote,
+.testimonial .name,
+.testimonial .role {
+  font-size: 1.1rem;
+}
 
   #team-img {
     width: 100%;
     margin-bottom: 20px;
   }
 
+ form input, .btn {
+  width: 90%;
+  max-width: 300px;
+  font-size: 1.1rem;
+}
+  #titre {
+  font-size: 2rem;
+  text-align: center;
+}
+
   .copy-right p {
     font-size: 1.5rem;
-  }
-
-  #titre {
-    font-size: 2rem;
-    text-align: center;
-  }
-
-  .testimonial .quote,
-  .testimonial .name,
-  .testimonial .role {
-    font-size: 1.2rem;
   }
 }
